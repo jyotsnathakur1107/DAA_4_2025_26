@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cab Booking System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🚖 Cab Booking System</h1>
+
+    <div class="form">
+        <label>Pickup Location</label>
+        <input type="text" id="pickup" placeholder="Enter pickup">
+
+        <label>Drop Location</label>
+        <input type="text" id="drop" placeholder="Enter destination">
+
+        <button onclick="bookRide()">Book Ride</button>
+    </div>
+
+    <div id="loading" class="hidden">Finding best route...</div>
+
+    <div id="result" class="hidden">
+        <h2>Ride Summary</h2>
+        <p id="route"></p>
+        <p id="distance"></p>
+        <p id="fare"></p>
+        <p id="driver"></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
